@@ -1,0 +1,12 @@
+server:
+  port: 8088
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver #mysql connector 6\u4EE5\u4E0A\u7248\u672C\u4F7F\u7528\uFF0Curl\u9700\u8981\u914D\u7F6EserverTimezone
+    url: jdbc:mysql://localhost:3306/crm?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=true&serverTimezone=GMT%2B8
+    username: root
+    password: 123456
+    type: com.alibaba.druid.pool.DruidDataSource #\u8FDE\u63A5\u6C60\u7C7B\u578B
+
+mybatis-plus:
+  mapper-locations: classpath*:/mapper/**/*.xml
